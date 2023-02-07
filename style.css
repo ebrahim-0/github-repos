@@ -1,0 +1,91 @@
+.get-repo {
+  width: 60%;
+  margin: 50px auto;
+}
+
+@media (max-width: 991px) {
+  .get-repo {
+    width: 500px;
+  }
+}
+
+form {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+form input[type="text"] {
+  width: 360px;
+  padding: 8px 10px;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+form input[type="submit"] {
+  background-color: red;
+  border: 0;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.get-repo .repo {
+  background: #eee;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.get-repo .repo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.get-repo .repo div a {
+  text-decoration: none;
+  background-color: red;
+  border: 0px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.get-repo .repo a,
+.stars {
+  text-decoration: none;
+  background-color: red;
+  border: 0px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.stars {
+  background-color: #009688;
+  width: 90px;
+  text-align: center;
+}
+.links {
+  display: flex;
+  gap: 10px;
+}
