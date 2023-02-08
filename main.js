@@ -21,6 +21,13 @@ async function getData() {
       myData.forEach((data) => {
         let div = document.createElement("div");
         let repoName = document.createTextNode(data.name);
+
+        let mediaMobile = window.matchMedia("(max-width: 600px)");
+
+        if (mediaMobile.matches) {
+          repoName = document.createTextNode(data.name.slice(0, 20));
+        }
+
         div.appendChild(repoName);
         let linkRepo = document.createElement("a");
         let linkStars = document.createElement("span");
